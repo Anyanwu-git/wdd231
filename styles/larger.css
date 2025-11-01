@@ -1,0 +1,29 @@
+/* Larger viewports */
+@media (min-width: 720px) {
+    .menu {
+        display: none;
+    }
+
+    /* hide hamburger */
+    .nav {
+        display: block !important;
+    }
+
+    /* show nav always */
+    .nav ul {
+        display: flex;
+        gap: .25rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .panel {
+        padding: 1.25rem;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

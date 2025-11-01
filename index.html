@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lilian Anyanwu · WDD231 Home</title>
+    <meta name="description" content="WDD231 course home page showing projects, certificate courses, and resources." />
+    <meta name="author" content="Lilian Anyanwu" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- ✅ Updated CSS paths -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- ✅ Updated JS paths (deferred) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="./" aria-label="Home">
+            <img src="images/logo.svg" width="40" height="40" alt="Personal site logo">
+            <span class="brand-name">Lilian Anyanwu</span>
+        </a>
+
+        <button id="menu" class="menu" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+        </button>
+
+        <nav id="primary-nav" class="nav">
+            <ul>
+                <li><a href="./" aria-current="page">Home</a></li>
+                <li><a href="./chamber/">Chamber</a></li>
+                <li><a href="./final/">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Home</h1>
+
+        <section class="panel">
+            <h2>Welcome</h2>
+            <p>
+                This is my WDD231 course home page. It includes links to weekly projects, a dynamic list of
+                courses in the Web &amp; Computer Programming certificate, and quick access to my profiles.
+            </p>
+        </section>
+
+        <section class="panel">
+            <h2>Certificate Courses</h2>
+
+            <div class="filters" role="group" aria-label="Course filters">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="WDD">WDD</button>
+                <button class="filter" data-filter="CSE">CSE</button>
+            </div>
+
+            <div id="course-stats" class="stats" aria-live="polite"></div>
+            <div id="courses" class="course-grid"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Resources</h2>
+            <ul class="resource-list">
+                <li><a href="https://developer.chrome.com/docs/devtools/" target="_blank" rel="noopener">Chrome
+                        DevTools</a></li>
+                <li><a href="https://web.dev/measure/" target="_blank" rel="noopener">Lighthouse</a></li>
+                <li><a href="https://fonts.google.com/" target="_blank" rel="noopener">Google Fonts</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="social">
+            <a href="https://github.com/Anyanwu-git" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <span aria-hidden="true">·</span>
+            <a href="mailto:your@email.com" aria-label="Email">Email</a>
+        </p>
+
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
