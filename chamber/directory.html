@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>London Chamber of Commerce · Member Directory</title>
+    <meta name="description" content="Business member directory for the London Chamber of Commerce." />
+    <meta name="author" content="Lilian Anyanwu" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph (Facebook) -->
+    <meta property="og:title" content="London Chamber of Commerce — Directory">
+    <meta property="og:description" content="Browse local businesses in our Chamber member directory.">
+    <meta property="og:image" content="https://anyanwu-git.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://anyanwu-git.github.io/wdd231/chamber/directory.html">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JS (defer) -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="./" aria-label="Chamber Home">
+            <img src="images/logo.svg" width="40" height="40" alt="London Chamber logo">
+            <span class="brand-name">London Chamber</span>
+        </a>
+
+        <button id="menu" class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+        </button>
+
+        <nav id="primary-nav" class="nav">
+            <ul>
+                <li><a href="directory.html" aria-current="page">Directory</a></li>
+                <li><a href="index.html">Home (next week)</a></li>
+                <li><a href="about.html">About (placeholder)</a></li>
+                <li><a href="contact.html">Contact (placeholder)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Member Directory</h1>
+
+        <section class="controls" aria-label="View controls">
+            <button id="gridBtn" class="view-btn active" aria-pressed="true">Grid</button>
+            <button id="listBtn" class="view-btn" aria-pressed="false">List</button>
+        </section>
+
+        <section id="directory" class="directory grid" aria-live="polite">
+            <!-- cards/list injected by JS -->
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <address>
+            <strong>London Chamber of Commerce</strong><br>
+            123 High Street, London, IG11 9XB<br>
+            <a href="tel:+441234567890">+44 1234 567 890</a> ·
+            <a href="mailto:info@yourchamber.org">info@yourchamber.org</a>
+        </address>
+
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

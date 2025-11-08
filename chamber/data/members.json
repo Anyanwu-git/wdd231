@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Acme Marketing Ltd",
+        "address": "12 Market Lane, London",
+        "phone": "+44 20 7946 0101",
+        "website": "https://www.acmemarketing.example",
+        "image": "acme.png",
+        "membership": 3
+    },
+    {
+        "name": "Bluebird Café",
+        "address": "45 River Street, London",
+        "phone": "+44 20 7946 0202",
+        "website": "https://bluebirdcafe.example",
+        "image": "bluebird.png",
+        "membership": 2
+    },
+    {
+        "name": "Maple Tech Solutions",
+        "address": "88 Tech Park, London",
+        "phone": "+44 20 7946 0303",
+        "website": "https://mapletech.example",
+        "image": "maple.png",
+        "membership": 3
+    },
+    {
+        "name": "Oak Fitness Studio",
+        "address": "7 Oak Avenue, London",
+        "phone": "+44 20 7946 0404",
+        "website": "https://oakfitness.example",
+        "image": "oak.png",
+        "membership": 1
+    },
+    {
+        "name": "Summit Accounting",
+        "address": "101 High Street, London",
+        "phone": "+44 20 7946 0505",
+        "website": "https://summitaccounting.example",
+        "image": "summit.png",
+        "membership": 2
+    },
+    {
+        "name": "River Print & Design",
+        "address": "22 Dock Road, London",
+        "phone": "+44 20 7946 0606",
+        "website": "https://riverprint.example",
+        "image": "river.png",
+        "membership": 1
+    },
+    {
+        "name": "Sunrise Florist",
+        "address": "3 Garden Close, London",
+        "phone": "+44 20 7946 0707",
+        "website": "https://sunriseflorist.example",
+        "image": "sunrise.png",
+        "membership": 1
+    }
+]
