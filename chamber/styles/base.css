@@ -20,6 +20,32 @@ body {
     line-height: 1.6;
 }
 
+/* Base links: always underlined for readability */
+a {
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration-thickness: 2px;
+}
+
+/* Keep top nav clean but not color-only on interaction */
+.nav a {
+    text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+    text-decoration: underline;
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
 /* Header & Nav */
 .site-header {
     position: sticky;
@@ -175,7 +201,7 @@ h1 {
 
 .meta a {
     color: var(--brand);
-    text-decoration: none
+    text-decoration: underline;
 }
 
 .meta a:hover {

@@ -51,16 +51,23 @@
 
     <main class="container">
         <h1>Member Directory</h1>
-
-        <section class="controls" aria-label="View controls">
-            <button id="gridBtn" class="view-btn active" aria-pressed="true">Grid</button>
-            <button id="listBtn" class="view-btn" aria-pressed="false">List</button>
+    
+        <section aria-labelledby="controls">
+            <h2 id="controls" class="sr-only">View Controls</h2>
+            <div class="controls" aria-label="View controls">
+                <button id="gridBtn" class="view-btn active" aria-pressed="true">Grid</button>
+                <button id="listBtn" class="view-btn" aria-pressed="false">List</button>
+            </div>
         </section>
-
-        <section id="directory" class="directory grid" aria-live="polite">
-            <!-- cards/list injected by JS -->
+    
+        <section aria-labelledby="members">
+            <h2 id="members">Members</h2>
+            <div id="directory" class="directory grid" aria-live="polite">
+                <!-- cards/list injected by JS -->
+            </div>
         </section>
     </main>
+
 
     <footer class="site-footer">
         <address>
