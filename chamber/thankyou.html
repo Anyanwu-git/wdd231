@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Chamber of Commerce · Thank You</title>
+    <meta name="description" content="Thank you for applying to join the London Chamber of Commerce.">
+    <meta name="author" content="Lilian Anyanwu">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.svg" alt="London Chamber of Commerce logo">
+            <div>
+                <p class="site-title">London Chamber of Commerce</p>
+                <p class="tagline">Connecting Local Businesses</p>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+        <h1>Thank You for Applying!</h1>
+        <p>We’ve received your membership application. A member of our team will review your information and contact you
+            soon.</p>
+
+        <section class="application-summary">
+            <h2>Your Application Details</h2>
+            <dl>
+                <div>
+                    <dt>First Name</dt>
+                    <dd id="summary-firstName"></dd>
+                </div>
+                <div>
+                    <dt>Last Name</dt>
+                    <dd id="summary-lastName"></dd>
+                </div>
+                <div>
+                    <dt>Email</dt>
+                    <dd id="summary-email"></dd>
+                </div>
+                <div>
+                    <dt>Mobile Number</dt>
+                    <dd id="summary-phone"></dd>
+                </div>
+                <div>
+                    <dt>Business / Organization</dt>
+                    <dd id="summary-orgName"></dd>
+                </div>
+                <div>
+                    <dt>Membership Level</dt>
+                    <dd id="summary-membershipLevel"></dd>
+                </div>
+                <div>
+                    <dt>Submitted</dt>
+                    <dd id="summary-timestamp"></dd>
+                </div>
+            </dl>
+        </section>
+
+        <p><a href="join.html">Submit another application</a> or <a href="index.html">return to the home page</a>.</p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> London Chamber of Commerce</p>
+        <p>WDD 231 Project · Lilian Anyanwu</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/thankyou.js" defer></script>
+</body>
+
+</html>

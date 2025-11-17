@@ -114,3 +114,147 @@ body {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
+.join-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.join-form-section,
+.membership-levels {
+    background-color: var(--panel, #f1f3f8);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.join-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-weight: 600;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    font: inherit;
+}
+
+/* Membership cards */
+.membership-levels h2 {
+    margin-bottom: 1rem;
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    /* For animation */
+    transform: translateY(10px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.membership-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+/* Animate in on load */
+.membership-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Modals */
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 20;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 1rem;
+    max-width: 500px;
+    width: 100%;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Larger view: form + cards side by side */
+@media (min-width: 800px) {
+    .join-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .join-form-section {
+        flex: 3;
+    }
+
+    .membership-levels {
+        flex: 2;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+}
+.thankyou-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.application-summary dl {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.application-summary dt {
+    font-weight: 600;
+}
+
+.application-summary dd {
+    margin: 0;
+}
