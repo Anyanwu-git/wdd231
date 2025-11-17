@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>London Chamber of Commerce · Home</title>
-    <meta name="description" content="Home page for the London Chamber of Commerce." />
+<meta name="description" content="The London Chamber of Commerce connects local businesses with networking events, resources, advocacy, and support to help them grow and thrive in the community.">
     <meta name="author" content="Lilian Anyanwu" />
 
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -15,6 +15,19 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <meta property="og:title" content="London Chamber of Commerce · Home">
+    <meta property="og:description"
+        content="Discover how the London Chamber of Commerce connects local businesses with events, resources, and support to help them grow and thrive in London.">
+    <meta property="og:image" content="https://anyanwu-git.github.io/wdd231/chamber/images/hero-large.jpg">
+    <meta property="og:url" content="https://anyanwu-git.github.io/wdd231/chamber/">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -23,7 +36,7 @@
         <div class="logo-title">
             <img src="images/logo.svg" alt="London Chamber of Commerce logo">
             <div>
-                <h1>London Chamber of Commerce</h1>
+<p class="site-title">London Chamber of Commerce</p>
                 <p>Connecting Local Businesses</p>
             </div>
         </div>
@@ -44,19 +57,14 @@
     <main>
         <!-- HERO SECTION -->
         <section class="hero">
-            <picture>
-                <!-- swap filenames to your actual hero images -->
-                <source srcset="images/hero-large.jpg" media="(min-width: 800px)">
-                <img src="images/hero-small.jpg" alt="City of London skyline with business district" loading="lazy">
-            </picture>
-
+            <picture>…</picture>
             <div class="hero-overlay">
-                <h2>Grow Your Business in London</h2>
+                <h1>London Chamber of Commerce</h1>
                 <p>We support local businesses with networking, advocacy, and resources to help you thrive.</p>
-                <!-- CALL TO ACTION over the hero image -->
                 <a href="join.html" class="btn primary">Join the Chamber</a>
             </div>
         </section>
+
 
         <!-- CURRENT EVENTS SECTION -->
         <section class="events">
@@ -123,9 +131,7 @@
         <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 
-    <!-- EXISTING SCRIPT FOR NAV TOGGLE / FOOTER DATES IF YOU HAVE ONE -->
-    <script src="scripts/base.js" defer></script>
-    <!-- NEW SCRIPT FOR WEATHER + SPOTLIGHTS -->
+    <!--  SCRIPT FOR WEATHER + SPOTLIGHTS -->
     <script src="scripts/chamber-home.js" defer></script>
 </body>
 
