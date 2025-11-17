@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>London Chamber of Commerce · Home</title>
+    <meta name="description" content="Home page for the London Chamber of Commerce." />
+    <meta name="author" content="Lilian Anyanwu" />
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- SAME CSS FILES AS directory.html -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <!-- Use the exact same header markup and nav from directory.html -->
+        <div class="logo-title">
+            <img src="images/logo.svg" alt="London Chamber of Commerce logo">
+            <div>
+                <h1>London Chamber of Commerce</h1>
+                <p>Connecting Local Businesses</p>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Open navigation menu">&#9776;</button>
+
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <picture>
+                <!-- swap filenames to your actual hero images -->
+                <source srcset="images/hero-large.jpg" media="(min-width: 800px)">
+                <img src="images/hero-small.jpg" alt="City of London skyline with business district" loading="lazy">
+            </picture>
+
+            <div class="hero-overlay">
+                <h2>Grow Your Business in London</h2>
+                <p>We support local businesses with networking, advocacy, and resources to help you thrive.</p>
+                <!-- CALL TO ACTION over the hero image -->
+                <a href="join.html" class="btn primary">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- CURRENT EVENTS SECTION -->
+        <section class="events">
+            <h2>Current Events</h2>
+            <ul class="event-list">
+                <li>
+                    <h3>Business Networking Breakfast</h3>
+                    <p>27 November 2025 · 8:00 AM · Central London</p>
+                </li>
+                <li>
+                    <h3>Small Business Marketing Workshop</h3>
+                    <p>4 December 2025 · 6:30 PM · Online</p>
+                </li>
+                <li>
+                    <h3>Holiday Business Showcase</h3>
+                    <p>12 December 2025 · 5:00 PM · Community Hall</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- WEATHER SECTION (API DATA) -->
+        <section class="weather">
+            <h2>Local Weather</h2>
+            <div id="current-weather" class="current-weather" aria-live="polite">
+                <!-- JS will insert current temperature + description -->
+                <p>Loading current weather...</p>
+            </div>
+            <div id="forecast" class="forecast">
+                <!-- JS will insert 3-day forecast -->
+            </div>
+        </section>
+
+        <!-- COMPANY SPOTLIGHTS SECTION (JSON + JS) -->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container" class="cards">
+                <!-- JS will insert 2–3 random gold/silver members -->
+            </div>
+        </section>
+
+        <!-- WHY JOIN / BENEFITS (extra content helps design & SEO) -->
+        <section class="highlights">
+            <h2>Why Join the London Chamber?</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Networking</h3>
+                    <p>Connect with other business owners and build long-term partnerships across the city.</p>
+                </article>
+                <article class="card">
+                    <h3>Visibility</h3>
+                    <p>Get featured in our directory, events, and spotlight promotions.</p>
+                </article>
+                <article class="card">
+                    <h3>Support</h3>
+                    <p>Access training, resources, and advocacy to help your business grow.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> London Chamber of Commerce</p>
+        <p>WDD 231 Project · Lilian Anyanwu</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <!-- EXISTING SCRIPT FOR NAV TOGGLE / FOOTER DATES IF YOU HAVE ONE -->
+    <script src="scripts/base.js" defer></script>
+    <!-- NEW SCRIPT FOR WEATHER + SPOTLIGHTS -->
+    <script src="scripts/chamber-home.js" defer></script>
+</body>
+
+</html>
