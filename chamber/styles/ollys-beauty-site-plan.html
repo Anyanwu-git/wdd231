@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ollys Beauty – Site Plan</title>
+
+    <!-- Google Fonts for Typography Section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            /* Color scheme */
+            --primary: #6A3FA0;
+            /* Deep plum – headings, accents */
+            --accent: #F6B7D2;
+            /* Soft blush pink – buttons, highlights */
+            --background: #FFF7FB;
+            /* Very light pink – page background */
+            --text-main: #2C2333;
+            /* Dark eggplant – main body text */
+            --muted: #7D6C90;
+            /* Muted purple – secondary text/borders */
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                sans-serif;
+            background-color: var(--background);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            border-bottom: 3px solid var(--accent);
+            padding: 1.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: "Poppins", system-ui, sans-serif;
+            font-weight: 600;
+            color: var(--primary);
+            letter-spacing: 0.04em;
+        }
+
+        header p {
+            margin: 0.35rem 0 0;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem 3rem;
+        }
+
+        h2,
+        h3 {
+            font-family: "Poppins", system-ui, sans-serif;
+            color: var(--primary);
+            margin-top: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.25rem;
+        }
+
+        h3 {
+            margin-top: 1.5rem;
+        }
+
+        section {
+            margin-top: 1.5rem;
+        }
+
+        .tagline {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--text-main);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        ul {
+            padding-left: 1.25rem;
+        }
+
+        li {
+            margin-bottom: 0.35rem;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .swatch {
+            background: white;
+            border-radius: 0.75rem;
+            border: 1px solid var(--accent);
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+        }
+
+        .swatch-top {
+            height: 60px;
+        }
+
+        .swatch-body {
+            padding: 0.75rem 0.9rem 0.9rem;
+            font-size: 0.9rem;
+        }
+
+        .swatch-name {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .code {
+            font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+                monospace;
+            background: rgba(250, 244, 249, 0.9);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .wireframes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .wireframe-box {
+            border-radius: 0.75rem;
+            border: 1px dashed var(--muted);
+            background: white;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .wireframe-box h4 {
+            margin-top: 0;
+            font-family: "Poppins", system-ui, sans-serif;
+            color: var(--primary);
+        }
+
+        footer {
+            border-top: 1px solid var(--accent);
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--muted);
+            background: #fff;
+        }
+
+        .small {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ollys Beauty – Individual Project Site Plan</h1>
+        <p class="small">WDD 231: Web Frontend Development &middot; Week 5</p>
+    </header>
+
+    <main>
+        <section id="overview">
+            <span class="tagline">Site Plan Overview</span>
+            <h2>Overview</h2>
+            <p>
+                <strong>Website Project Topic:</strong>
+                <em>Ollys Beauty – Professional Braiding &amp; Beauty Services</em>
+            </p>
+            <p>
+                This site plan outlines the structure and visual direction for my
+                three–page informational website promoting my braiding business, Ollys Beauty.
+                The website will focus on professional hair-braiding services such as knotless
+                braids, boho braids, feed-ins, passion twists, and natural hair treatments.
+            </p>
+            <p>
+                The project will help me create a professional online presence for Ollys Beauty
+                while applying the HTML, CSS, and JavaScript skills I am learning in WDD 231.
+                It is directly connected to my real-life work and will support future
+                marketing, booking, and client communication.
+            </p>
+        </section>
+
+        <section id="site-name">
+            <h2>1. Site Name</h2>
+            <p>
+                <strong>Site Name:</strong> Ollys Beauty – Professional Braiding &amp; Beauty Services
+            </p>
+            <p>
+                <strong>Optional domain ideas:</strong> <span class="code">ollysbeauty.co.uk</span>,
+                <span class="code">ollysbeautybraids.com</span>
+            </p>
+            <p>
+                I chose this name because “Ollys Beauty” is the name I already use for my hair and
+                beauty services. Including “Professional Braiding &amp; Beauty Services” clearly
+                communicates that the site is focused on high–quality braid styles, hair care, and
+                beauty services for clients who want a polished, reliable look.
+            </p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>2. Site Purpose</h2>
+            <p>
+                The purpose of the Ollys Beauty website is to serve as a central hub where
+                current and potential clients can:
+            </p>
+            <ul>
+                <li>Browse available braid and hair styles with clear descriptions and photos.</li>
+                <li>View pricing, what is included, and estimated time for each service.</li>
+                <li>Access booking information and policies (e.g., deposit rules, late arrivals).</li>
+                <li>See a gallery of completed hairstyles and before–after transformations.</li>
+                <li>Find care tips and product recommendations to help maintain their braids.</li>
+            </ul>
+            <p>
+                Overall, the site should make it easy for clients to decide which style they want,
+                understand what to expect, and take the next step to book an appointment.
+            </p>
+        </section>
+
+        <section id="scenarios">
+            <h2>3. Scenarios (User Questions)</h2>
+            <p>
+                These are typical questions that visitors in the target audience might ask. The
+                content on the site will be designed to answer these questions clearly.
+            </p>
+            <ul>
+                <li>
+                    “What braid styles does Ollys Beauty offer, and how much does each style cost?”
+                </li>
+                <li>
+                    “How long will it take to install knotless braids or passion twists, and what
+                    hair should I bring?”
+                </li>
+                <li>
+                    “Can I see photos of Ollys Beauty’s previous work to help me choose a style?”
+                </li>
+                <li>
+                    “How do I book an appointment, pay a deposit, or reschedule my session?”
+                </li>
+                <li>
+                    “What products and nightly routines do you recommend to keep my braids neat
+                    and lasting longer?”
+                </li>
+            </ul>
+        </section>
+
+        <section id="content-structure">
+            <h2>4. Planned Pages &amp; Content Structure</h2>
+
+            <h3>Home Page</h3>
+            <ul>
+                <li>Hero section with a strong welcome message and featured braid image.</li>
+                <li>Short introduction to Ollys Beauty and what makes the service unique.</li>
+                <li>Preview cards of popular services (e.g., knotless braids, boho braids).</li>
+                <li>Call-to-action button linking to booking information or contact section.</li>
+                <li>Short testimonial or “Why choose Ollys Beauty?” highlight.</li>
+            </ul>
+
+            <h3>Services Page</h3>
+            <ul>
+                <li>
+                    Detailed list of services: knotless braids, boho braids, feed-in cornrows,
+                    passion twists, natural hair treatments, etc.
+                </li>
+                <li>
+                    Pricing, what is included (wash, blow-dry, extensions or not), and estimated
+                    installation duration for each style.
+                </li>
+                <li>Recommended hair types and quantities to bring for each service.</li>
+                <li>Booking and policy notes (deposits, cancellation, arrival time).</li>
+            </ul>
+
+            <h3>Gallery Page</h3>
+            <ul>
+                <li>Image gallery of completed hairstyles, organized by style category.</li>
+                <li>Before-and-after photos where available.</li>
+                <li>Short captions describing style name, length, and any special details.</li>
+                <li>Inspiration section highlighting trending styles or seasonal looks.</li>
+            </ul>
+        </section>
+
+        <section id="color-scheme">
+            <h2>5. Color Scheme</h2>
+            <p>
+                The Ollys Beauty brand will use a warm, feminine, and professional color palette.
+                The colors below are used consistently on this site plan and will also be used
+                on the final website.
+            </p>
+
+            <div class="color-grid">
+                <article class="swatch">
+                    <div class="swatch-top" style="background-color: #6A3FA0;"></div>
+                    <div class="swatch-body">
+                        <p class="swatch-name">Primary – Deep Plum</p>
+                        <p><span class="code">#6A3FA0</span></p>
+                        <p>Used for logo text, headings, buttons, and key accents.</p>
+                    </div>
+                </article>
+
+                <article class="swatch">
+                    <div class="swatch-top" style="background-color: #F6B7D2;"></div>
+                    <div class="swatch-body">
+                        <p class="swatch-name">Accent – Soft Blush Pink</p>
+                        <p><span class="code">#F6B7D2</span></p>
+                        <p>Used for call-to-action buttons, highlights, and subtle backgrounds.</p>
+                    </div>
+                </article>
+
+                <article class="swatch">
+                    <div class="swatch-top" style="background-color: #FFF7FB;"></div>
+                    <div class="swatch-body">
+                        <p class="swatch-name">Background – Light Rose</p>
+                        <p><span class="code">#FFF7FB</span></p>
+                        <p>Used as the main page background to keep the site soft and airy.</p>
+                    </div>
+                </article>
+
+                <article class="swatch">
+                    <div class="swatch-top" style="background-color: #2C2333;"></div>
+                    <div class="swatch-body">
+                        <p class="swatch-name">Text – Deep Eggplant</p>
+                        <p><span class="code">#2C2333</span></p>
+                        <p>Used for main body text to provide strong contrast and readability.</p>
+                    </div>
+                </article>
+            </div>
+
+            <p class="small">
+                Note: This HTML document already uses this color scheme for headings,
+                background, borders, and emphasis as requested in the assignment.
+            </p>
+        </section>
+
+        <section id="typography">
+            <h2>6. Typography</h2>
+            <p>
+                The typography for Ollys Beauty balances modern, clean headings with a
+                comfortable body font that is easy to read on both mobile and desktop.
+            </p>
+            <ul>
+                <li>
+                    <strong>Headings:</strong>
+                    <span class="code">Poppins, sans-serif</span> – used for all
+                    <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;h3&gt;</code>
+                    tags to give a bold, stylish, and beauty-focused feel.
+                </li>
+                <li>
+                    <strong>Body Text:</strong>
+                    <span class="code">Open Sans, sans-serif</span> – used for paragraphs,
+                    lists, and smaller sections because it is legible and friendly.
+                </li>
+                <li>
+                    <strong>Accent / Code:</strong>
+                    A simple monospace stack is used in this planning document for highlighting
+                    hex values and domain suggestions.
+                </li>
+            </ul>
+            <p class="small">
+                This page already imports these fonts from Google Fonts and applies them to
+                headings and body text.
+            </p>
+        </section>
+
+        <section id="wireframe">
+            <h2>7. Wireframe Sketches (Home Page)</h2>
+            <p>
+                The following descriptions outline the intended layout for the Home page in
+                both mobile and desktop views. Actual wireframe drawings could be sketched on
+                paper or in a design tool, but this text provides a clear structural guide.
+            </p>
+
+            <div class="wireframes">
+                <div class="wireframe-box">
+                    <h4>Mobile View (Narrow Screen)</h4>
+                    <ul>
+                        <li>Top navigation with logo text “Ollys Beauty” and a simple menu icon.</li>
+                        <li>
+                            Hero section with a full-width braid photo, overlay text “Professional
+                            Braiding &amp; Beauty Services,” and a “Book Now” button.
+                        </li>
+                        <li>
+                            Short “About Ollys Beauty” section with a headshot image and 1–2 short
+                            paragraphs.
+                        </li>
+                        <li>
+                            Scrolling list of featured services (cards stacked vertically with style
+                            name, short description, starting price, and “View Details” link).
+                        </li>
+                        <li>
+                            A small testimonial or “Why Clients Love Us” quote block.
+                        </li>
+                        <li>Footer with social icons, contact info, and booking reminder.</li>
+                    </ul>
+                </div>
+
+                <div class="wireframe-box">
+                    <h4>Desktop / Tablet View (Wide Screen)</h4>
+                    <ul>
+                        <li>
+                            Horizontal navigation bar with logo on the left and links
+                            <em>Home</em>, <em>Services</em>, <em>Gallery</em>, and
+                            <em>Book Now</em> on the right.
+                        </li>
+                        <li>
+                            Hero section split horizontally: large braid image on the right and
+                            headline + supporting text + “Book Now” button on the left.
+                        </li>
+                        <li>
+                            Three-column feature section showing top services with icons or mini
+                            photos and short descriptions.
+                        </li>
+                        <li>
+                            A gallery preview row with 3–4 images linking to the full Gallery page.
+                        </li>
+                        <li>
+                            Wider testimonial band with background accent color and client quotes.
+                        </li>
+                        <li>
+                            Footer with columns for contact details, quick links, and social media.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ollys Beauty &middot; WDD 231 Individual Project Site Plan</p>
+    </footer>
+</body>
+
+</html>
