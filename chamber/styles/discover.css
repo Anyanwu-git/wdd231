@@ -1,0 +1,148 @@
+/* Discover page layout */
+.discover-main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.visit-message {
+    background-color: #eef5ff;
+    color: #113355;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.discover-intro {
+    margin-bottom: 1.5rem;
+}
+
+.discover-intro h1 {
+    margin-bottom: 0.5rem;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Small screens: single column, named areas but stacked */
+@media (max-width: 640px) {
+    .discover-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+    }
+}
+
+/* Medium screens: two columns */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+}
+
+/* Large screens: three columns, more complex layout if desired */
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card8";
+    }
+}
+
+/* Map each card to its named area */
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+.card6 {
+    grid-area: card6;
+}
+
+.card7 {
+    grid-area: card7;
+}
+
+.card8 {
+    grid-area: card8;
+}
+
+.discover-card {
+    background: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.discover-card h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.discover-card .description {
+    font-size: 0.95rem;
+}
+
+.discover-card .learn-more {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    border: none;
+    background-color: #1f4f8b;
+    color: #fff;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
