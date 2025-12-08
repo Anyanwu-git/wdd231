@@ -88,8 +88,8 @@ a:focus {
 }
 
 .site-nav .nav-link.current {
-    background: rgba(212, 166, 86, 0.2);
-    color: var(--accent-soft);
+    background-color: var(--accent);
+    color: var(--bg);
 }
 
 .nav-toggle {
