@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Waist-Length Knotless Braids",
+        "image": "images/gallery-1.jpg",
+        "description": "Medium knotless braids with colour 1B/30 blend, finished waist length."
+    },
+    {
+        "id": 2,
+        "title": "Boho Knotless Braids",
+        "image": "images/gallery-2.jpg",
+        "description": "Boho knotless with loose curls added throughout for movement."
+    },
+    {
+        "id": 3,
+        "title": "Tribal Middle-Part Cornrows",
+        "image": "images/gallery-3.jpg",
+        "description": "Detailed tribal cornrows with triangle parts at the back."
+    },
+    {
+        "id": 4,
+        "title": "Soft Locs with Curls",
+        "image": "images/gallery-4.jpg",
+        "description": "Shoulder length soft locs with curly ends for a textured finish."
+    },
+    {
+        "id": 5,
+        "title": "Kids Braids with Beads",
+        "image": "images/gallery-5.jpg",
+        "description": "Colourful beads added to children's braids for a playful look."
+    },
+    {
+        "id": 6,
+        "title": "Men's Straight-Back Cornrows",
+        "image": "images/gallery-6.jpg",
+        "description": "Simple straight-back cornrows for low maintenance styling."
+    },
+    {
+        "id": 7,
+        "title": "Passion Twists",
+        "image": "images/gallery-7.jpg",
+        "description": "Long, soft passion twists styled to the side."
+    },
+    {
+        "id": 8,
+        "title": "Feed-in Ponytail",
+        "image": "images/gallery-8.jpg",
+        "description": "High ponytail created using feed-in cornrows and braiding hair."
+    },
+    {
+        "id": 9,
+        "title": "Loc Bob",
+        "image": "images/gallery-9.jpg",
+        "description": "Neck-length faux locs bob with a side part."
+    },
+    {
+        "id": 10,
+        "title": "Half-Up Half-Down Braids",
+        "image": "images/gallery-10.jpg",
+        "description": "Half-up knotless braids with a top bun and flowing back section."
+    },
+    {
+        "id": 11,
+        "title": "Goddess Braids",
+        "image": "images/gallery-11.jpg",
+        "description": "Thick goddess cornrows styled in an updo."
+    },
+    {
+        "id": 12,
+        "title": "Curly Leave-Out Sew-In",
+        "image": "images/gallery-12.jpg",
+        "description": "Curly sew-in weave blended with natural leave-out for a seamless look."
+    }
+]

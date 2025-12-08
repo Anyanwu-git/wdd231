@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services · Olly's Beauty</title>
+
+    <meta name="description"
+        content="Browse Olly's Beauty braiding services including knotless braids, tribal braids, faux locs, twists and cornrows. View prices, duration and details.">
+    <meta name="author" content="Lilian Anyanwu">
+
+    <link rel="icon" href="images/favicon.png" type="image/svg+xml">
+
+    <meta property="og:title" content="Services · Olly's Beauty">
+    <meta property="og:description"
+        content="Detailed pricing and timing for braids, twists, locs and cornrows at Olly's Beauty London.">
+    <meta property="og:image" content="https://anyanwu-git.github.io/wdd231/final/images/hero-braids.jpg">
+    <meta property="og:url" content="https://anyanwu-git.github.io/wdd231/final/services.html">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-wrap">
+            <img src="images/logo-ollys.webp" alt="Olly's Beauty logo" class="logo">
+            <span class="site-title">Olly's Beauty</span>
+        </div>
+
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link current">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="form.html" class="nav-link">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <h1>Braids, Twists & Locs Menu</h1>
+                <p>Select a style to view full details. Tap the heart to save favourites.</p>
+            </div>
+
+            <div class="filters">
+                <label for="length-filter">Filter by length:</label>
+                <select id="length-filter">
+                    <option value="all">All</option>
+                    <option value="short">Short</option>
+                    <option value="medium">Medium</option>
+                    <option value="long">Long</option>
+                </select>
+            </div>
+
+            <div id="services-list" class="card-grid" aria-live="polite">
+                <!-- JS injects cards -->
+            </div>
+        </section>
+
+        <!-- Shared modal -->
+        <div class="modal" id="service-modal" aria-hidden="true" aria-labelledby="service-modal-title" role="dialog">
+            <div class="modal-backdrop" data-modal-dismiss></div>
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close details" data-modal-dismiss>&times;</button>
+                <h2 id="service-modal-title"></h2>
+                <img id="service-modal-image" src="" alt="" loading="lazy">
+                <p id="service-modal-description"></p>
+                <p class="modal-meta"><span id="service-modal-duration"></span> · <span id="service-modal-price"></span>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Olly's Beauty · London · All rights reserved.</p>
+        <p>
+            <a href="attributions.html">Attributions</a> ·
+            <a href="https://YOUR-VIDEO-LINK" target="_blank" rel="noopener">Project Demo Video</a>
+        </p>
+    </footer>
+
+    <script type="module" src="scripts/services.js"></script>
+</body>
+
+</html>

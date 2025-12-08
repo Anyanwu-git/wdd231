@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Knotless Braids – Medium",
+        "price": "£85",
+        "duration": "4 hours",
+        "length": "medium",
+        "image": "images/service-knotless-medium.jpg",
+        "description": "Tension-free knotless braids that are light, flexible and perfect for everyday wear."
+    },
+    {
+        "id": 2,
+        "name": "Knotless Braids – Small",
+        "price": "£110",
+        "duration": "6 hours",
+        "length": "long",
+        "image": "images/service-knotless-small.jpg",
+        "description": "Small, detailed knotless braids for a sleek look that lasts several weeks."
+    },
+    {
+        "id": 3,
+        "name": "Boho Knotless Braids",
+        "price": "£120",
+        "duration": "6 hours",
+        "length": "long",
+        "image": "images/service-boho.jpg",
+        "description": "Romantic boho knotless braids with loose curls added for softness and movement."
+    },
+    {
+        "id": 4,
+        "name": "Tribal Feed-in Braids",
+        "price": "£80",
+        "duration": "3.5 hours",
+        "length": "long",
+        "image": "images/service-tribal.jpg",
+        "description": "Centre-part tribal braids with clean parts and customised patterns."
+    },
+    {
+        "id": 5,
+        "name": "Stitch Cornrows – 8 Lines",
+        "price": "£60",
+        "duration": "2.5 hours",
+        "length": "long",
+        "image": "images/service-stitch.jpg",
+        "description": "Sharp stitch lines created using gel and precision parting for a bold look."
+    },
+    {
+        "id": 6,
+        "name": "Two-Strand Twists",
+        "price": "£55",
+        "duration": "3 hours",
+        "length": "medium",
+        "image": "images/service-twists.jpg",
+        "description": "Soft twists suitable for natural hair, easy to maintain and moisturise."
+    },
+    {
+        "id": 7,
+        "name": "Passion Twists",
+        "price": "£95",
+        "duration": "5 hours",
+        "length": "long",
+        "image": "images/service-passion-twists.jpg",
+        "description": "Fluffy springy twists with a bohemian finish, perfect for holidays and photos."
+    },
+    {
+        "id": 8,
+        "name": "Soft Locs",
+        "price": "£110",
+        "duration": "6 hours",
+        "length": "long",
+        "image": "images/service-soft-locs.jpg",
+        "description": "Faux locs with a soft, natural finish that mimic matured dreadlocks."
+    },
+    {
+        "id": 9,
+        "name": "Faux Loc Bob",
+        "price": "£90",
+        "duration": "4.5 hours",
+        "length": "short",
+        "image": "images/service-loc-bob.jpg",
+        "description": "Chin-to-shoulder length faux locs for a chic, lightweight bob style."
+    },
+    {
+        "id": 10,
+        "name": "Men's Cornrows",
+        "price": "£45",
+        "duration": "2 hours",
+        "length": "short",
+        "image": "images/service-mens-cornrows.jpg",
+        "description": "Custom cornrow patterns for men with clean parts and low tension."
+    },
+    {
+        "id": 11,
+        "name": "Kids' Braids with Beads",
+        "price": "£40",
+        "duration": "2.5 hours",
+        "length": "short",
+        "image": "images/service-kids.jpg",
+        "description": "Child-friendly braids with careful handling and optional beads or accessories."
+    },
+    {
+        "id": 12,
+        "name": "Sew-In Weave Leave-Out",
+        "price": "£70",
+        "duration": "3 hours",
+        "length": "long",
+        "image": "images/service-sewin.jpg",
+        "description": "Classic sew-in with minimal leave-out to blend your natural hair with extensions."
+    },
+    {
+        "id": 13,
+        "name": "Ponytail Cornrows",
+        "price": "£55",
+        "duration": "2.5 hours",
+        "length": "long",
+        "image": "images/service-ponytail.jpg",
+        "description": "Cornrows that feed into a high or low ponytail with added braiding hair."
+    },
+    {
+        "id": 14,
+        "name": "Scalp Treatment & Braid Takedown",
+        "price": "£35",
+        "duration": "1.5 hours",
+        "length": "short",
+        "image": "images/service-treatment.jpg",
+        "description": "Gentle braid removal followed by a soothing scalp cleanse and oil treatment."
+    },
+    {
+        "id": 15,
+        "name": "Consultation Only",
+        "price": "£15",
+        "duration": "30 minutes",
+        "length": "short",
+        "image": "images/service-consultation.jpg",
+        "description": "In-person or video consultation to assess your hair and plan the best style."
+    }
+]

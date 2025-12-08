@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery · Olly's Beauty</title>
+
+    <meta name="description"
+        content="View Olly's Beauty braid and loc gallery. Real client styles including knotless braids, tribal braids, twists and soft locs.">
+    <meta name="author" content="Lilian Anyanwu">
+
+    <link rel="icon" href="images/favicon.png" type="image/svg+xml">
+
+    <meta property="og:title" content="Gallery · Olly's Beauty">
+    <meta property="og:description" content="Photo gallery of client hairstyles created at Olly's Beauty London.">
+    <meta property="og:image" content="https://anyanwu-git.github.io/wdd231/final/images/hero-braids.jpg">
+    <meta property="og:url" content="https://anyanwu-git.github.io/wdd231/final/gallery.html">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-wrap">
+            <img src="images/logo-ollys.webp" alt="Olly's Beauty logo" class="logo">
+            <span class="site-title">Olly's Beauty</span>
+        </div>
+
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link current">Gallery</a></li>
+                <li><a href="form.html" class="nav-link">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <h1>Client Gallery</h1>
+                <p>Tap a photo to view style details.</p>
+            </div>
+
+            <div id="gallery-grid" class="gallery-grid" aria-live="polite">
+                <!-- JS injects gallery items -->
+            </div>
+        </section>
+
+        <div class="modal" id="gallery-modal" aria-hidden="true" aria-labelledby="gallery-modal-title" role="dialog">
+            <div class="modal-backdrop" data-modal-dismiss></div>
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close image" data-modal-dismiss>&times;</button>
+                <h2 id="gallery-modal-title"></h2>
+                <img id="gallery-modal-image" src="" alt="" loading="lazy">
+                <p id="gallery-modal-description"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Olly's Beauty · London · All rights reserved.</p>
+        <p>
+            <a href="attributions.html">Attributions</a> ·
+            <a href="https://YOUR-VIDEO-LINK" target="_blank" rel="noopener">Project Demo Video</a>
+        </p>
+    </footer>
+
+    <script type="module" src="scripts/gallery.js"></script>
+</body>
+
+</html>

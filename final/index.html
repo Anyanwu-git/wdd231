@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Olly's Beauty · African Braids & Styling</title>
+
+    <meta name="description"
+        content="Olly's Beauty offers luxury African braids, knotless braids, locs, cornrows, and premium hairstyling in London. Book a protective style that lasts.">
+    <meta name="author" content="Lilian Anyanwu">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon." type="image/svg+xml">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Olly's Beauty · African Braids & Styling">
+    <meta property="og:description"
+        content="Premium African braids, knotless braids, locs and cornrows in London. View styles, prices and book your next look.">
+    <meta property="og:image" content="https://anyanwu-git.github.io/wdd231/final/images/hero-braids.jpg">
+    <meta property="og:url" content="https://anyanwu-git.github.io/wdd231/final/">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-wrap">
+            <img src="images/logo-ollys.svg" alt="Olly's Beauty logo" class="logo">
+            <span class="site-title">Olly's Beauty</span>
+        </div>
+
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link current">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="form.html" class="nav-link">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+<header class="site-header">
+    <a href="index.html" class="site-logo">
+        <img src="images/logo-ollys.png" alt="Olly's Beauty logo">
+    </a>
+    ...
+</header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-braids-large.jpg" media="(min-width: 800px)">
+                <img src="images/hero-braids.jpg" alt="Client with long, sleek knotless braids" loading="lazy">
+            </picture>
+            <div class="hero-content">
+                <h1>Luxury African Braids in London</h1>
+                <p>Protective styles that respect your hairline and your time. Olly's Beauty specialises in neat,
+                    long-lasting braids, twists and locs.</p>
+                <a class="btn primary" href="form.html">Book Your Appointment</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section about">
+            <div class="section-header">
+                <h2>Why Olly's Beauty?</h2>
+                <p>Professional styling with a soft touch.</p>
+            </div>
+            <div class="about-grid">
+                <article>
+                    <h3>Healthy Hair First</h3>
+                    <p>We focus on tension-free techniques that protect your edges and scalp, using products that
+                        support hair growth and moisture retention.</p>
+                </article>
+                <article>
+                    <h3>Modern, Versatile Styles</h3>
+                    <p>From boho knotless braids to soft locs, we create looks that work for church, work, and content
+                        days.</p>
+                </article>
+                <article>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Evening and weekend slots are available so you can fit your appointment around uni, work, or
+                        family life.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Featured Services (dynamic) -->
+        <section class="section featured">
+            <div class="section-header">
+                <h2>Featured Services</h2>
+                <p>Explore some of our most requested styles.</p>
+            </div>
+            <div id="featured-services" class="card-grid" aria-live="polite">
+                <!-- JS will inject cards -->
+            </div>
+        </section>
+
+        <!-- Modal for service details -->
+        <div class="modal" id="service-modal" aria-hidden="true" aria-labelledby="service-modal-title" role="dialog">
+            <div class="modal-backdrop" data-modal-dismiss></div>
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close details" data-modal-dismiss>&times;</button>
+                <h2 id="service-modal-title"></h2>
+                <img id="service-modal-image" src="" alt="" loading="lazy">
+                <p id="service-modal-description"></p>
+                <p class="modal-meta"><span id="service-modal-duration"></span> · <span id="service-modal-price"></span>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Olly's Beauty · London · All rights reserved.</p>
+        <p>
+            <a href="attributions.html">Attributions</a> ·
+            <a href="https://YOUR-VIDEO-LINK" target="_blank" rel="noopener">Project Demo Video</a>
+        </p>
+    </footer>
+
+    <script type="module" src="scripts/home.js"></script>
+</body>
+
+</html>

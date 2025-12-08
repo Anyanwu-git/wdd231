@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You · Olly's Beauty</title>
+
+    <meta name="description" content="Thank you for booking an appointment with Olly's Beauty.">
+    <meta name="author" content="Lilian Anyanwu">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-wrap">
+            <img src="images/logo-ollys.svg" alt="Olly's Beauty logo" class="logo">
+            <span class="site-title">Olly's Beauty</span>
+        </div>
+
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="form.html" class="nav-link">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <h1>Thank You!</h1>
+                <p>Your booking request has been received. A confirmation message will be sent shortly.</p>
+            </div>
+
+            <div class="summary" id="booking-summary" aria-live="polite">
+                <!-- JS will populate with submitted data -->
+            </div>
+
+            <p><a href="index.html" class="btn">Back to Home</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Olly's Beauty · London · All rights reserved.</p>
+        <p>
+            <a href="attributions.html">Attributions</a> ·
+            <a href="https://YOUR-VIDEO-LINK" target="_blank" rel="noopener">Project Demo Video</a>
+        </p>
+    </footer>
+
+    <script type="module" src="scripts/thankyou.js"></script>
+</body>
+
+</html>

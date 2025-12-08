@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book an Appointment · Olly's Beauty</title>
+
+    <meta name="description"
+        content="Request an appointment at Olly's Beauty for knotless braids, twists, locs or cornrows.">
+    <meta name="author" content="Lilian Anyanwu">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="Book an Appointment · Olly's Beauty">
+    <meta property="og:description"
+        content="Complete the booking form to request a date and style at Olly's Beauty London.">
+    <meta property="og:image" content="https://anyanwu-git.github.io/wdd231/final/images/hero-braids.jpg">
+    <meta property="og:url" content="https://anyanwu-git.github.io/wdd231/final/form.html">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-wrap">
+            <img src="images/logo-ollys.svg" alt="Olly's Beauty logo" class="logo">
+            <span class="site-title">Olly's Beauty</span>
+        </div>
+
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="form.html" class="nav-link current">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <h1>Book an Appointment</h1>
+                <p>Complete the form below. We will confirm your slot by email or WhatsApp.</p>
+            </div>
+
+            <form class="booking-form" method="get" action="thankyou.html" id="booking-form">
+                <div class="field">
+                    <label for="name">Full name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="phone">Mobile number (with country code)</label>
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+                </div>
+
+                <div class="field">
+                    <label for="service">Preferred service</label>
+                    <select id="service" name="service" required>
+                        <!-- JS will populate from services.json -->
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="date">Preferred date</label>
+                    <input id="date" name="date" type="date" required>
+                </div>
+
+                <div class="field">
+                    <label for="time">Preferred time</label>
+                    <input id="time" name="time" type="time">
+                </div>
+
+                <div class="field">
+                    <label for="notes">Anything we should know about your hair?</label>
+                    <textarea id="notes" name="notes" rows="4"
+                        placeholder="e.g. relaxed hair, very tender scalp, want it waist length"></textarea>
+                </div>
+
+                <button type="submit" class="btn primary">Submit Booking Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Olly's Beauty · London · All rights reserved.</p>
+        <p>
+            <a href="attributions.html">Attributions</a> ·
+            <a href="https://YOUR-VIDEO-LINK" target="_blank" rel="noopener">Project Demo Video</a>
+        </p>
+    </footer>
+
+    <script type="module" src="scripts/form.js"></script>
+</body>
+
+</html>
