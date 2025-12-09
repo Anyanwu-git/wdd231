@@ -5,84 +5,94 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>London Chamber of Commerce · Discover Our Area</title>
+    <title>London Chamber of Commerce · Discover</title>
     <meta name="description"
-        content="The London Chamber of Commerce connects local businesses with networking events, resources, advocacy, and support to help them grow and thrive in the community.">
+        content="Discover key locations, parks, markets, and innovation hubs in the London area served by the London Chamber of Commerce.">
     <meta name="author" content="Lilian Anyanwu" />
 
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
-    <!-- SAME CSS FILES AS directory.html -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <!-- other existing <link> tags ... -->
-    <script type="module" src="scripts/discover.js" defer></script>
-
-    <meta property="og:title" content="London Chamber of Commerce · Home">
+    <!-- Open Graph -->
+    <meta property="og:title" content="London Chamber of Commerce · Discover">
     <meta property="og:description"
-        content="Discover how the London Chamber of Commerce connects local businesses with events, resources, and support to help them grow and thrive in London.">
+        content="Explore places of interest in the London Chamber area including markets, parks, the riverside promenade, and tech hubs.">
     <meta property="og:image" content="https://anyanwu-git.github.io/wdd231/chamber/images/hero-large.jpg">
-    <meta property="og:url" content="https://anyanwu-git.github.io/wdd231/chamber/">
+    <meta property="og:url" content="https://anyanwu-git.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
+    <!-- Fonts (same as other pages) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-
+    <!-- CSS (reuse your base + add discover.css) -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/discover.css">
 </head>
 
 <body>
-    <header>
-        <!-- Use the exact same header markup and nav from directory.html -->
-        <div class="logo-title">
-            <img src="images/logo.svg" alt="London Chamber of Commerce logo">
-            <div>
-                <p class="site-title">London Chamber of Commerce</p>
-                <p>Connecting Local Businesses</p>
-            </div>
-        </div>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Chamber Home">
+            <img src="images/logo.svg" width="40" height="40" alt="London Chamber of Commerce logo">
+            <span class="brand-name">London Chamber</span>
+        </a>
 
-        <button id="menu-toggle" aria-label="Open navigation menu">&#9776;</button>
+        <button id="menu" class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+        </button>
 
-        <nav id="primary-nav">
+        <nav id="primary-nav" class="nav">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" aria-current="page">Discover</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-<main class="discover-main">
-    <section id="visit-message" class="visit-message"></section>
+    <main class="discover-main">
+        <!-- localStorage message -->
+        <section class="visit-message" id="visit-message" aria-live="polite">
+            <!-- JS will replace this text -->
+            Checking your last visit…
+        </section>
 
-    <section class="discover-intro">
-        <h1>Discover Our Area</h1>
-        <p>
-            Explore some of the most interesting places, landmarks, and experiences
-            in our chamber’s area. These spots are great for residents, visitors,
-            and businesses looking to connect with the community.
-        </p>
-    </section>
+        <section class="discover-intro">
+            <h1>Discover Our Chamber Area</h1>
+            <p>
+                The London Chamber of Commerce represents a vibrant mix of high streets, riverside walks, parks, markets
+                and
+                innovation hubs. Explore a few of the places that make this area a great place to live and do business.
+            </p>
+        </section>
 
-    <section id="discover-grid" class="discover-grid">
-        <!-- Cards will be injected here by discover.js -->
-    </section>
-</main>
+        <!-- Cards will be built from JSON data -->
+        <section class="discover-grid" aria-label="Places of interest" id="discover-grid">
+            <!-- JS builds 8 cards from data/discover.mjs -->
+        </section>
+    </main>
 
+    <footer class="site-footer">
+        <address>
+            <strong>London Chamber of Commerce</strong><br>
+            123 High Street, London, IG11 9XB<br>
+            <a href="tel:+441234567890">+44 1234 567 890</a> ·
+            <a href="mailto:info@yourchamber.org">info@yourchamber.org</a>
+        </address>
 
-    <footer>
-        <p>&copy; <span id="year"></span> London Chamber of Commerce</p>
-        <p>WDD 231 Project · Lilian Anyanwu</p>
-        <p>Last Modified: <span id="last-modified"></span></p>
+        <p>&copy; <span id="year"></span> London Chamber of Commerce · WDD 231 · Lilian Anyanwu</p>
     </footer>
 
-    <!--  SCRIPT FOR WEATHER + SPOTLIGHTS -->
-    <script src="scripts/chamber-home.js" defer></script>
+    <!-- Menu + date script from your directory/home file if you want -->
+    <script src="scripts/navigation.js" defer></script>
+
+    <!-- Discover JS (module) -->
+    <script type="module" src="scripts/discover.js"></script>
 </body>
 
 </html>

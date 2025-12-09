@@ -1,77 +1,75 @@
-// chamber/data/discover.mjs
-// Exported data for the Discover page cards
-
+// data/discover.mjs
 export const places = [
     {
-        id: "place1",
-        name: "Central Market Square",
+        id: "card1",
+        name: "Central Street Market",
         image: "images/central-market.webp",
-        alt: "Shoppers walking past stalls at the central market",
-        address: "Market Street 12, City Centre",
+        alt: "Stalls and shoppers at Central Street Market",
+        address: "Central Street, London IG11",
         description:
-            "A lively open-air market with fresh produce, street food, and local crafts. A favorite spot for both locals and visitors."
+            "A busy local market where independent traders sell fresh produce, crafts and street food, perfect for weekend networking with other small businesses."
     },
     {
-        id: "place2",
+        id: "card2",
+        name: "City Museum & Heritage Centre",
+        image: "images/city-museum.webp",
+        alt: "Front of the City Museum & Heritage Centre",
+        address: "Museum Road, London IG11",
+        description:
+            "Learn about the industrial and cultural history of the borough, including the stories behind many long-standing local companies."
+    },
+    {
+        id: "card3",
+        name: "City Park & Lakes",
+        image: "images/city-park.webp",
+        alt: "Walking path and lake at City Park",
+        address: "Park Avenue, London IG11",
+        description:
+            "A large green space with walking paths and a lake—often used for outdoor events, fun runs and family-friendly business fairs."
+    },
+    {
+        id: "card4",
+        name: "Riverside Food Hall",
+        image: "images/food-hall.webp",
+        alt: "Food hall with different food stalls",
+        address: "Riverside Way, London IG11",
+        description:
+            "Dozens of food vendors under one roof, showcasing cuisine from around the world and providing a popular meeting place after work."
+    },
+    {
+        id: "card5",
+        name: "Innovation Park",
+        image: "images/innovation-park.webp",
+        alt: "Modern office buildings at Innovation Park",
+        address: "Innovation Park, London IG11",
+        description:
+            "A cluster of co-working spaces and start-up offices where many new tech and creative businesses in the chamber are based."
+    },
+    {
+        id: "card6",
         name: "Riverside Promenade",
         image: "images/riverside-promenade.webp",
-        alt: "View of the river walk with trees and benches",
-        address: "Riverside Walk, Near Old Bridge",
+        alt: "People walking along the riverside promenade",
+        address: "Riverside Promenade, London IG11",
         description:
-            "A landscaped walking path along the river with cafés, bike rentals, and evening lights that make it perfect for sunset strolls."
+            "A scenic walkway along the river with cafés and independent shops—popular for evening business meet-ups and events."
     },
     {
-        id: "place3",
-        name: "City History Museum",
-        image: "images/city-museum.webp",
-        alt: "Historic building that houses the city museum",
-        address: "18 Heritage Lane",
+        id: "card7",
+        name: "Summit Conference Centre",
+        image: "images/summit.webp",
+        alt: "Conference hall inside Summit Centre",
+        address: "Summit Way, London IG11",
         description:
-            "A curated collection of artifacts and exhibits telling the story of the area’s growth, culture, and local businesses."
+            "A modern venue used for chamber conferences, training workshops and product launches for local companies."
     },
     {
-        id: "place4",
-        name: "Innovation Business Park",
-        image: "images/innovation-park.webp",
-        alt: "Modern office buildings in a business park",
-        address: "45 Enterprise Avenue",
-        description:
-            "Home to many tech startups and small businesses, this park offers shared workspaces, meeting rooms, and networking events."
-    },
-    {
-        id: "place5",
-        name: "Community Arts Centre",
-        image: "images/arts-centre.webp",
-        alt: "Interior of an arts centre with paintings on the wall",
-        address: "7 Gallery Road",
-        description:
-            "A creative hub featuring rotating art exhibitions, workshops, and performances by local artists and students."
-    },
-    {
-        id: "place6",
-        name: "City Park & Gardens",
-        image: "images/city-park.webp",
-        alt: "Green park with trees, walking paths, and people relaxing",
-        address: "Park Lane, North District",
-        description:
-            "A large green space with playgrounds, picnic areas, and seasonal events such as outdoor concerts and markets."
-    },
-    {
-        id: "place7",
-        name: "Tech Learning Hub",
+        id: "card8",
+        name: "Tech Hub Campus",
         image: "images/tech-hub.webp",
-        alt: "People working on laptops in a modern learning space",
-        address: "3 Learning Court",
+        alt: "Open-plan office at a tech hub",
+        address: "Tech Hub Campus, London IG11",
         description:
-            "Offers digital skills classes, coding clubs, and training sessions for entrepreneurs and young professionals."
-    },
-    {
-        id: "place8",
-        name: "Local Food Hall",
-        image: "images/food-hall.webp",
-        alt: "Indoor food hall with different vendors and seating",
-        address: "22 Tasty Avenue",
-        description:
-            "A shared space for independent food vendors serving cuisines from around the world, perfect for lunch meetings and gatherings."
+            "Shared office and studio space for digital, media and technology firms—home to many of the chamber’s fastest-growing members."
     }
 ];

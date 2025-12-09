@@ -27,7 +27,7 @@
     gap: 1rem;
 }
 
-/* Small screens: single column, named areas but stacked */
+/* Small screens: single column */
 @media (max-width: 640px) {
     .discover-grid {
         grid-template-columns: 1fr;
@@ -55,7 +55,7 @@
     }
 }
 
-/* Large screens: three columns, more complex layout if desired */
+/* Large screens: three columns */
 @media (min-width: 1025px) {
     .discover-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -66,7 +66,7 @@
     }
 }
 
-/* Map each card to its named area */
+/* Map cards to named areas */
 .card1 {
     grid-area: card1;
 }
@@ -145,4 +145,16 @@
     color: #fff;
     font-size: 0.85rem;
     cursor: pointer;
+}
+
+/* Hover image effect – larger views only (not mobile) */
+@media (min-width: 641px) {
+    .discover-card img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .discover-card:hover img {
+        transform: scale(1.04);
+        filter: brightness(1.05);
+    }
 }

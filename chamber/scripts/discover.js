@@ -1,20 +1,55 @@
-// chamber/scripts/discover.js
+// scripts/discover.js
 import { places } from "../data/discover.mjs";
 
-// ---------- Build cards from JSON data ----------
-function renderPlaces() {
-    const grid = document.querySelector("#discover-grid");
+const grid = document.querySelector("#discover-grid");
+const visitMessage = document.querySelector("#visit-message");
+const YEAR_SPAN = document.querySelector("#year");
+
+// ---------- Visitor message using localStorage ----------
+function updateVisitMessage() {
+    if (!visitMessage) return;
+
+    const STORAGE_KEY = "chamber-discover-last-visit";
+    const now = Date.now();
+    const last = Number(localStorage.getItem(STORAGE_KEY));
+
+    let message;
+
+    if (!last) {
+        message = "Welcome! Let us know if you have any questions.";
+    } else {
+        const msPerDay = 1000 * 60 * 60 * 24;
+        const days = Math.floor((now - last) / msPerDay);
+
+        if (days < 1) {
+            message = "Back so soon! Awesome!";
+        } else if (days === 1) {
+            message = "You last visited 1 day ago.";
+        } else {
+            message = `You last visited ${days} days ago.`;
+        }
+    }
+
+    visitMessage.textContent = message;
+    localStorage.setItem(STORAGE_KEY, String(now));
+}
+
+// ---------- Build 8 cards from JSON data ----------
+function buildCards() {
     if (!grid) return;
 
     places.forEach((place, index) => {
         const card = document.createElement("article");
-        card.classList.add("discover-card", `card${index + 1}`);
+        card.className = `discover-card card${index + 1}`;
 
         card.innerHTML = `
       <h2>${place.name}</h2>
       <figure>
-        <img src="${place.image}" alt="${place.alt}" loading="lazy">
-        <figcaption>${place.name}</figcaption>
+        <img src="${place.image}"
+             alt="${place.alt}"
+             width="300"
+             height="200"
+             loading="lazy">
       </figure>
       <address>${place.address}</address>
       <p class="description">${place.description}</p>
@@ -25,39 +60,15 @@ function renderPlaces() {
     });
 }
 
-// ---------- Last-visit message using localStorage ----------
-function showVisitMessage() {
-    const messageElement = document.querySelector("#visit-message");
-    if (!messageElement) return;
-
-    const now = Date.now();
-    const lastVisit = Number(localStorage.getItem("discover-last-visit"));
-
-    let messageText = "";
-
-    if (!lastVisit) {
-        messageText = "Welcome! Let us know if you have any questions.";
-    } else {
-        const msDifference = now - lastVisit;
-        const daysDifference = Math.floor(
-            msDifference / (1000 * 60 * 60 * 24)
-        );
-
-        if (daysDifference < 1) {
-            messageText = "Back so soon! Awesome!";
-        } else if (daysDifference === 1) {
-            messageText = "You last visited 1 day ago.";
-        } else {
-            messageText = `You last visited ${daysDifference} days ago.`;
-        }
+// ---------- Footer year ----------
+function updateYear() {
+    if (YEAR_SPAN) {
+        YEAR_SPAN.textContent = new Date().getFullYear();
     }
-
-    messageElement.textContent = messageText;
-    localStorage.setItem("discover-last-visit", String(now));
 }
 
-// ---------- Initialize ----------
 document.addEventListener("DOMContentLoaded", () => {
-    renderPlaces();
-    showVisitMessage();
+    buildCards();        // JSON → 8 cards
+    updateVisitMessage(); // localStorage
+    updateYear();
 });
